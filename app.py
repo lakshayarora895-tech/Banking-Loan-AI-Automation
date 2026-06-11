@@ -14,10 +14,9 @@ def load_model():
 
 try:
     model = load_model()
-except Exception:
-    st.error("Model file not found. Ensure 'loan_tree_model.pkl' is uploaded.")
+except Exception as e:
+    st.error(f"The actual error is: {e}")
     st.stop()
-
 # Layout
 col1, col2 = st.columns(2)
 with col1:
