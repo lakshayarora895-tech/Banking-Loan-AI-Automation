@@ -1,0 +1,6 @@
+import joblib
+
+# Export only the model (Decision trees do not use scalers)
+joblib.dump(best_tree, 'loan_tree_model.pkl')
+
+print("Model successfully exported as 'loan_tree_model.pkl'!")
