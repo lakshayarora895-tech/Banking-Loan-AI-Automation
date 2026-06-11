@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+
 st.set_page_config(page_title="Apex Bank | Loan AI", layout="centered")
 st.title("🏦 Apex Bank Loan Approval AI")
 st.write("Input the applicant's metrics below to evaluate loan eligibility.")
@@ -16,6 +17,7 @@ try:
 except Exception as e:
     st.error(f"The actual error is: {e}")
     st.stop()
+
 # Layout
 col1, col2 = st.columns(2)
 with col1:
